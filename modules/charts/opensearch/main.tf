@@ -28,22 +28,22 @@ resource "helm_release" "opensearch" {
   recreate_pods = true
 }
 
-resource "helm_release" "opensearch-dashboards" {
-  chart = "opensearch-dashboards"
-  name = "opensearch"
-  #create_namespace = false
-  #namespace = kubernetes_namespace.monitoring.metadata[0].name
-  count = var.enabled ? 1 : 0
-  
-  values = [
-    file("${path.module}/dashboard-values.yml")
-  ]
-
-  repository = "https://opensearch-project.github.io/helm-charts/"
-  force_update  = true
-  wait          = true
-  recreate_pods = true
-}
+#resource "helm_release" "opensearch-dashboards" {
+#  chart = "opensearch-dashboards"
+#  name = "opensearch"
+#  #create_namespace = false
+#  #namespace = kubernetes_namespace.monitoring.metadata[0].name
+#  count = var.enabled ? 1 : 0
+#  
+#  values = [
+#    file("${path.module}/dashboard-values.yml")
+#  ]
+#
+#  repository = "https://opensearch-project.github.io/helm-charts/"
+#  force_update  = true
+#  wait          = true
+#  recreate_pods = true
+#}
 
 resource "helm_release" "fluent-bit"  {
   name          = "fluent"

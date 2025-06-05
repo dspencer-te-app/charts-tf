@@ -5,3 +5,8 @@ module "aqua" {
 module "opensearch" {
   source = "./modules/charts/opensearch"
 }
+
+module "dashboard" {
+  source = "./modules/charts/grafana"
+}
+
