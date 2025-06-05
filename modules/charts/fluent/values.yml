@@ -1,6 +1,8 @@
-fluentd.replicas: 1
-fluentd.resources.requests.memory: 2Gi
-fluentd.resources.requests.cpu: 1
+replicas: 1
+resources:
+  requests:
+    memory: "2Gi"
+    cpu: 1
 
 env:
   - name: fluent_bit_user

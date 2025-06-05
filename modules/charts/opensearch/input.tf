@@ -9,3 +9,9 @@ variable "namespace" {
   type = string
   default = "opensearch"
 }
+
+variable "admin_password" {
+  description = "Default Admin Password"
+  type = string
+  default = "SuperSecretR0d3nt"
+}

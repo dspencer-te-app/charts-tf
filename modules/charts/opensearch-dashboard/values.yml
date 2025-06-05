@@ -1,3 +1,5 @@
-opensearch-node1.replicas:1
-opensearch-node1.resources.requests.memory:"2Gi"
-opensearch-node1.resources.requests.cpu:1
+replicas: 1
+resources:
+  requests:
+    memory: "2Gi"
+    cpu: 1

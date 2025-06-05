@@ -9,3 +9,7 @@ rbac:
   create: true
   serviceAccountName: "opensearchassumedrole"
   automountServiceAccountToken: false
+
+extraEnvs:
+  - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
+    value: "SuperSecretR0d3nt"

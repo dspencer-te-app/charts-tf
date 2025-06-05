@@ -1,3 +1,5 @@
+APPLY_FLAGS 	:= -auto-approve
+
 .PHONY: all install init plan apply
 
 all: init lint plan
@@ -12,7 +14,7 @@ fmt:
 	@terraform $@
 
 destroy:
-	@terraform $@
+	@terraform $@ $(APPLY_FLAGS)
 
 plan:
 	@terraform $@
@@ -21,4 +23,4 @@ init:
 	@terraform $@
 
 apply:
-	@terraform $@
+	@terraform $@ $(APPLY_FLAGS)

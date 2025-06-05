@@ -1,7 +1,7 @@
 resource "helm_release" "opensearch" {
   chart = "opensearch"
   name = "opensearch"
-  namespace = "opensearch"
+  namespace = var.namespace
   count = var.enabled ? 1 : 0
 
   values = [
@@ -14,3 +14,4 @@ resource "helm_release" "opensearch" {
   recreate_pods = false
   create_namespace = true
 }
+
