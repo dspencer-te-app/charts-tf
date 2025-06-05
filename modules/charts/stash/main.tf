@@ -1,4 +1,4 @@
-module "helm_release" {
+resource "helm_release" "stash" {
   source = "cloudposse/helm-release/aws"
   name = var.name
   repository = var.repository

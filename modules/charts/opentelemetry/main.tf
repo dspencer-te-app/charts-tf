@@ -1,5 +1,4 @@
-module "helm_release" {
-  source = "cloudposse/helm-release/aws"
+resource "helm_release" "opentelemetry" {
   name = "opentelemetry"
   repository = var.repository
   chart = var.chart

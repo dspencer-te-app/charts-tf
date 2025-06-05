@@ -1,5 +1,4 @@
-module "helm_release" {
-  source = "cloudposse/helm-release/aws"
+resource "helm_release" "traefik-crds" {
   name = "traefik-crds"
   repository = var.repository
   chart = "traefik/traefik-crds"

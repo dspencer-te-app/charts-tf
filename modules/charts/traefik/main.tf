@@ -1,8 +1,7 @@
-module "helm_release" {
-  source = "cloudposse/helm-release/aws"
+resource "helm_release" "traefik" {
   name = "traefik"
   repository = var.repository
-  chart = "traefik/traefik"
+  chart = "traefik"
   chart_version = var.chart_version
   namespace = var.namespace
   count = var.enabled ? 1 : 0

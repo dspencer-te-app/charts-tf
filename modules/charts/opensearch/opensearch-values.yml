@@ -1,10 +1,13 @@
 replicas: 1
+
 resources:
   requests:
-    memory: "2Gi"
+    memory: "512M"
     cpu: 1
+
 persistence:
   size: "40G"
+
 rbac:
   create: true
   serviceAccountName: "opensearchassumedrole"
@@ -12,4 +15,7 @@ rbac:
 
 extraEnvs:
   - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
-    value: "SuperSecretR0d3nt"
+    valueFrom:
+      secretKeyRef:
+        name: "os-admin-credentials"
+        key: "password"

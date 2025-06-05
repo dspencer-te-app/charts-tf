@@ -20,7 +20,7 @@ variable "set" {
   description = "The set values to pass to the trivy chart"
   type = list(string)
   default = [
-    "trivy.ignoreUnfixed=true"
+    "trivy.ignoreUnfixed: true"
   ]
 }
 

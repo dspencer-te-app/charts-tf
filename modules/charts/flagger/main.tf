@@ -1,5 +1,4 @@
-module "helm_release" {
-  source = "cloudposse/helm-release/aws"
+resource "helm_release" "flagger" {
   name = "flagger"
   repository = var.repository
   chart = var.chart

@@ -8,12 +8,12 @@ env:
   - name: fluent_bit_user
     valueFrom:
       secretKeyRef:
-        name: "fluent-bit-os-credentials"
+        name: "os-admin-credentials"
         key: "username"
   - name: "fluent_bit_password "
     valueFrom:
       secretKeyRef:
-        name: "fluent-bit-os-credentials"
+        name: "os-admin-credentials"
         key: "password"
 
 config.logLevel: "warning"
