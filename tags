@@ -61,6 +61,8 @@
 4	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	o	array:Modules
 5	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	o	array:Modules
 6	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	o	array:Modules
+7	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	o	array:Modules
+8	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	o	array:Modules
 APPLY_FLAGS	Makefile	/^APPLY_FLAGS 	:= -auto-approve$/;"	m
 CHANGELOG	.terraform/modules/fluent.fluentbit/.chglog/config.yml	/^  title: CHANGELOG$/;"	t
 Commands	.terraform/modules/fluent.fluentbit/README.md	/^## Commands$/;"	s	chapter:Helm Release Module
@@ -71,6 +73,8 @@ Dir	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":".
 Dir	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.4
 Dir	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.5
 Dir	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.6
+Dir	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.7
+Dir	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.8
 Helm Release Module	.terraform/modules/fluent.fluentbit/README.md	/^# Helm Release Module$/;"	c
 How to Contribute	.terraform/modules/fluent.fluentbit/README.md	/^## How to Contribute$/;"	s	chapter:Helm Release Module
 Inputs	.terraform/modules/fluent.fluentbit/README.md	/^## Inputs$/;"	s	chapter:Helm Release Module
@@ -81,6 +85,8 @@ Key	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":".
 Key	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.4
 Key	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.5
 Key	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.6
+Key	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.7
+Key	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.8
 Module Variables	.terraform/modules/fluent.fluentbit/README.md	/^## Module Variables$/;"	s	chapter:Helm Release Module
 Modules	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	a
 Outputs	.terraform/modules/fluent.fluentbit/README.md	/^## Outputs$/;"	s	chapter:Helm Release Module
@@ -93,6 +99,8 @@ Source	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir"
 Source	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.4
 Source	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.5
 Source	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.6
+Source	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.7
+Source	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.8
 Usage example	.terraform/modules/fluent.fluentbit/README.md	/^## Usage example$/;"	s	chapter:Helm Release Module
 Validate creation of components	.terraform/modules/fluent.fluentbit/README.md	/^## Validate creation of components$/;"	s	chapter:Helm Release Module
 Version	.terraform/modules/modules.json	/^{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"aqua","Source":".\/modules\/charts\/aqua","/;"	s	object:Modules.4
@@ -149,6 +157,7 @@ enabled	modules/charts/fluxcd/input.tf	/^variable "enabled" {$/;"	v
 enabled	modules/charts/karpenter/variables.tf	/^variable "enabled" {$/;"	v
 enabled	modules/charts/opensearch/input.tf	/^variable "enabled" {$/;"	v
 enabled	modules/charts/opentelemetry/input.tf	/^variable "enabled" {$/;"	v
+enabled	modules/charts/prometheus/input.tf	/^variable "enabled" {$/;"	v
 enabled	modules/charts/stash/input.tf	/^variable "enabled" {$/;"	v
 enabled	modules/charts/traefik-crds/input.tf	/^variable "enabled" {$/;"	v
 enabled	modules/charts/traefik/input.tf	/^variable "enabled" {$/;"	v
@@ -167,6 +176,8 @@ init	Makefile	/^init:$/;"	t
 install	Makefile	/^install: apply$/;"	t
 instance_count	modules/aws/opensearch/variables.tf	/^variable "instance_count" {$/;"	v
 instance_type	modules/aws/opensearch/variables.tf	/^variable "instance_type" {$/;"	v
+jaeger	charts.tf	/^module "jaeger" {$/;"	m
+jaeger	modules/charts/jaeger/main.tf	/^resource "helm_release" "jaeger" {$/;"	r
 karpenter_iam_role_arn	modules/charts/karpenter/variables.tf	/^variable "karpenter_iam_role_arn" {$/;"	v
 kibana_enabled	modules/aws/opensearch/variables.tf	/^variable "kibana_enabled" {$/;"	v
 kibana_security_group_ids	modules/aws/opensearch/variables.tf	/^variable "kibana_security_group_ids" {$/;"	v
@@ -182,6 +193,7 @@ namespace	modules/charts/fluxcd/input.tf	/^variable "namespace" {$/;"	v
 namespace	modules/charts/karpenter/variables.tf	/^variable "namespace" {$/;"	v
 namespace	modules/charts/opensearch/input.tf	/^variable "namespace" {$/;"	v
 namespace	modules/charts/opentelemetry/input.tf	/^variable "namespace" {$/;"	v
+namespace	modules/charts/prometheus/input.tf	/^variable "namespace" {$/;"	v
 namespace	modules/charts/stash/input.tf	/^variable "namespace" {$/;"	v
 namespace	modules/charts/traefik-crds/input.tf	/^variable "namespace" {$/;"	v
 namespace	modules/charts/traefik/input.tf	/^variable "namespace" {$/;"	v
@@ -189,10 +201,11 @@ node_to_node_encryption_enabled	modules/aws/opensearch/variables.tf	/^variable "
 opensearch	charts.tf	/^module "opensearch" {$/;"	m
 opensearch	modules/aws/opensearch/main.tf	/^resource "aws_opensearch_domain" "opensearch" {$/;"	r
 opensearch	modules/charts/opensearch/main.tf	/^resource "helm_release" "opensearch" {$/;"	r
-opensearch-dashboards	modules/charts/opensearch/main.tf	/^resource "helm_release" "opensearch-dashboards" {$/;"	r
 opentelemetry	modules/charts/opentelemetry/main.tf	/^resource "helm_release" "opentelemetry" {$/;"	r
 os_admin_credentials	modules/charts/opensearch/main.tf	/^resource "kubernetes_secret" "os_admin_credentials" {$/;"	r
 plan	Makefile	/^plan:$/;"	t
+prometheus	charts.tf	/^module "prometheus" {$/;"	m
+prometheus	modules/charts/prometheus/main.tf	/^resource "helm_release" "prometheus" {$/;"	r
 release	.terraform/modules/fluent.fluentbit/Makefile	/^release: ## Create release version$/;"	t
 repository	.terraform/modules/fluent.fluentbit/variables.tf	/^variable "repository" {$/;"	v
 repository	modules/charts/aqua/input.tf	/^variable "repository" {$/;"	v
